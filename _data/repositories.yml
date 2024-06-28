@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - hangjung97
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - creatis-myriad/ASCENT
+  - creatis-myriad/creatis-myriad.github.io

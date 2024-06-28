@@ -34,7 +34,7 @@
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "200px"
+            sizes = "400px"
             class="preview z-depth-1 rounded"
             zoomable=true
             alt=entry.preview
@@ -132,6 +132,11 @@
         </span>
       {% endif %}
     </div>
+
+    <!-- Reset variables for each entry -->
+    {% assign entrytype = '' %}
+    {% assign entrymonth = '' %}
+    {% assign entryyear = '' %}
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
