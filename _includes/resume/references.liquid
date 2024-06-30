@@ -1,31 +1,47 @@
-<div class="list-groups">
+<ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in data[1] %}
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            {% if content.icon %}
-              <td class="list-group-category-icon">
-                <i class="{{ content.icon }}"></i>
+    <li class="list-group-item">
+      <div class="row">
+        <table class="table-cv list-group-table">
+          <tbody>
+            <tr>
+              {% if content.icon %}
+                <td class="list-group-category-icon">
+                  <i class="{{ content.icon }}"></i>
+                </td>
+              {% else %}
+                <td class="list-group-category-icon"></td>
+              {% endif %}
+              <td class="list-group-category">
+                <a href="{{ content.url }}" target="_blank">{{ content.name }}</a>
               </td>
-            {% else %}
-              <td class="list-group-category-icon"></td>
-            {% endif %}
-            <!-- Calculate colspan number for category title -->
-            {% assign i = 1 %}
-            {% for item in content.items %}
-              {% assign i = i | plus: 1 %}
-            {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>{{ content.reference }}</b>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="list-group-name">
+                {% if content.reference.size > 1 %}
+                  <ul class="items" style="list-style-position: inside; padding-left: 0; margin: 0; padding: 0;">
+                    {% for item in content.reference %}
+                      <li>
+                        <b>{{ item }}</b>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <b>{{ content.reference }}</b>
+                  <br>
+                {% endif %}
+                {% if content.email %}
+                  <span><i class="fa-solid fa-envelope">&nbsp;</i> <a href="mailto:{{ content.email }}">{{ content.email }}</a></span>
+                {% endif %}
+                {% if content.phone %}
+                  <br><span><i class="fa-solid fa-phone">&nbsp;</i> <a href="tel:{{ content.phone }}">{{ content.phone }}</a></span>
+                {% endif %}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
   {% endfor %}
-</div>
+</ul>
