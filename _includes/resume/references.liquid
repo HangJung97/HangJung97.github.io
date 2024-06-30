@@ -32,10 +32,15 @@
                   <br>
                 {% endif %}
                 {% if content.email %}
-                  <span><i class="fa-solid fa-envelope">&nbsp;</i> <a href="mailto:{{ content.email }}">{{ content.email }}</a></span>
+                  <span
+                    ><i class="fa-solid fa-envelope">&nbsp;</i> <a href="mailto:{{ content.email }}">{{ content.email }}</a></span
+                  >
                 {% endif %}
                 {% if content.phone %}
-                  <br><span><i class="fa-solid fa-phone">&nbsp;</i> <a href="tel:{{ content.phone }}">{{ content.phone }}</a></span>
+                  <br>
+                  <span
+                    ><i class="fa-solid fa-phone">&nbsp;</i> <a href="tel:{{ content.phone }}">{{ content.phone }}</a></span
+                  >
                 {% endif %}
               </td>
             </tr>
