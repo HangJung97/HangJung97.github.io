@@ -1,6 +1,8 @@
 github_users:
   - hangjung97
 
+repo_description_lines_max: 2
+
 github_repos:
   - creatis-myriad/ASCENT
   - creatis-myriad/creatis-myriad.github.io
