@@ -50,7 +50,7 @@
       "area": "Deep learning and medical image analysis",
       "studyType": "Ph.D.",
       "startDate": "2021-10-01",
-      "note": "Supervisors: Dr. <a href='https://biomecardio.com/en/'>Damien Garcia</a>, Prof. <a href='https://olivier-bernard-creatis.github.io/'>Olivier Bernard</a>, and MD–PhD <a href='https://scholar.google.com/citations?user=wn-XnTAAAAAJ&hl=en'>Pierre-Yves Courand</a>",
+      "note": "Supervisors: Dr. <a href='https://biomecardio.com/en/'>Damien Garcia</a>, Prof. <a href='https://olivier-bernard-creatis.github.io/'>Olivier Bernard</a>, and MD–PhD <a href='https://scholar.google.com/citations?user=wn-XnTAAAAAJ'>Pierre-Yves Courand</a>",
       "score": ""
     }
   ],
@@ -131,6 +131,13 @@
     }
   ],
   "publications": [
+    {
+      "name": "Boosting Cardiac Color Doppler Frame Rates with Deep Learning",
+      "publisher": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+      "releaseDate": "2024-07-08",
+      "url": "https://ieeexplore.ieee.org/document/10587281",
+      "summary": ""
+    },
     {
       "name": "Physics-Guided Neural Networks for Intraventricular Vector Flow Mapping",
       "publisher": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
