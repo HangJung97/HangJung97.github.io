@@ -22,6 +22,28 @@
       }
     ]
   },
+  "work": [
+    {
+      "name": "CREATIS",
+      "location": "Villeurbanne, FR",
+      "position": "Postdoctoral researcher",
+      "url": "https://www.creatis.insa-lyon.fr/site/en/node/46881",
+      "startDate": "2024-11-08",
+      "note": "Supervisors: Dr. <a href='https://biomecardio.com/en/'>Damien Garcia</a>, Prof. <a href='https://olivier-bernard-creatis.github.io/'>Olivier Bernard</a>, and MD–PhD <a href='https://scholar.google.com/citations?user=wn-XnTAAAAAJ'>Pierre-Yves Courand</a>",
+      "highlights": []
+    },
+    {
+      "name": "CREATIS",
+      "location": "Villeurbanne, FR",
+      "position": "Student researcher",
+      "url": "https://www.creatis.insa-lyon.fr/site/en/equipe-de-recherche/tomoradio",
+      "startDate": "2021-03-01",
+      "endDate": "2021-08-31",
+      "summary": "Final year project: Development of an end-to-end 3D U-Net based rib fracture detection algorithm on computed tomography (CT) images",
+      "note": "Supervisors: Prof. <a href='https://scholar.google.com/citations?user=k3HqqsIAAAAJ'>Voichiţa Maxim</a> and Dr. <a href='https://scholar.google.com/citations?user=YbvRYLUAAAAJ'>Théo Leuliet</a>",
+      "highlights": []
+    }
+  ],
   "education": [
     {
       "institution": "INSA Lyon",
@@ -47,9 +69,10 @@
       "institution": "INSA Lyon",
       "location": "Villeurbanne, FR",
       "url": "",
-      "area": "Deep learning and medical image analysis",
+      "area": "Physics-guided neural networks for intraventricular vector flow mapping by color Doppler",
       "studyType": "Ph.D.",
       "startDate": "2021-10-01",
+      "endDate": "2024-11-07",
       "note": "Supervisors: Dr. <a href='https://biomecardio.com/en/'>Damien Garcia</a>, Prof. <a href='https://olivier-bernard-creatis.github.io/'>Olivier Bernard</a>, and MD–PhD <a href='https://scholar.google.com/citations?user=wn-XnTAAAAAJ'>Pierre-Yves Courand</a>",
       "score": ""
     }
@@ -64,19 +87,6 @@
       "name": "Deep learning",
       "icon": "fa-solid fa-database",
       "keywords": ["Multimodal learning", "Physics-informed neural networks", "Physics-guided neural networks"]
-    }
-  ],
-  "work": [
-    {
-      "name": "CREATIS",
-      "location": "Villeurbanne, FR",
-      "position": "Student researcher",
-      "url": "https://www.creatis.insa-lyon.fr/site/en/equipe-de-recherche/tomoradio",
-      "startDate": "2021-03-01",
-      "endDate": "2021-08-31",
-      "summary": "Final year project: Development of an end-to-end 3D U-Net based rib fracture detection algorithm on computed tomography (CT) images",
-      "note": "Supervisors: Prof. <a href='https://scholar.google.com/citations?user=k3HqqsIAAAAJ'>Voichiţa Maxim</a> and Dr. <a href='https://scholar.google.com/citations?user=YbvRYLUAAAAJ'>Théo Leuliet</a>",
-      "highlights": []
     }
   ],
   "service and volunteer": [
@@ -110,6 +120,14 @@
       "position": "Reviewer",
       "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=58",
       "startDate": "2023",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "organization": "Computer Methods and Programs in Biomedicine",
+      "position": "Reviewer",
+      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=58",
+      "startDate": "2024",
       "summary": "",
       "highlights": []
     }
