@@ -1,17 +1,14 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <b>Postdoctoral researcher</b> @ Inserm, CREATIS, France.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -19,16 +16,18 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a postdoctoral researcher in the [ULTIM](https://www.creatis.insa-lyon.fr/site/en/equipe-de-recherche/ultim) team at [CREATIS](https://www.creatis.insa-lyon.fr/site/en), France, funded by [Inserm](https://www.inserm.fr/en/home/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In November 2024, I obtained my Ph.D. from [INSA Lyon](https://www.insa-lyon.fr/en)/[CREATIS](https://www.creatis.insa-lyon.fr/site/en), France. Supervised by [Damien Garcia](https://biomecardio.com/), [Olivier Bernard](https://olivier-bernard-creatis.github.io), and [Pierre-Yves Courand](https://scholar.google.com/citations?user=wn-XnTAAAAAJ), my thesis focused on estimating intracardiac vector blood flow from color Dpopler echocardiography using physics-informed and physics-guided neural networks.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, with sponsorship from the Malaysian government ([JPA](https://www.jpa.gov.my)), I completed my preparatory class ([ASINSA](https://www.insa-lyon.fr/en/node/6216)) and earned a Master's Degree in Electrical engineering at [INSA Lyon](https://www.insa-lyon.fr/en) in 2018 and 2021, respectively.
+
+Outside of work, I enjoy staying active with badminton and table tennis. I am also a food enthusiast, always eager to try new cuisines and culinary experiences.
