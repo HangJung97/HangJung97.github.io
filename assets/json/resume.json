@@ -232,7 +232,7 @@
     {
       "name": "Olivier Bernard",
       "icon": "fa-solid fa-book",
-      "reference": ["Professor, Department of Electrical Engineering, INSA Lyon, France", "Deputy director, CREATIS, Lyon, France"],
+      "reference": ["Deputy director, CREATIS, Lyon, France", "Professor, Department of Electrical Engineering, INSA Lyon, France"],
       "email": "olivier.bernard@insa-lyon.fr",
       "url": "https://olivier-bernard-creatis.github.io/"
     },
