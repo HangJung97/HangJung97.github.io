@@ -46,6 +46,13 @@ ninja.data = [{
           title: 'I just started a new adventure as a postdoctoral researcher at the Department...',
           description: "",
           section: "News",},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/CV_Hang_Jung_Ling.pdf", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
