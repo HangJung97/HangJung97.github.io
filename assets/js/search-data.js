@@ -42,6 +42,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-started-as-a-postdoctoral-researcher-at-creatis-marking-the-beginning-of-an-exciting-new-chapter-in-my-research-journey",
           title: 'I have started as a postdoctoral researcher at CREATIS, marking the beginning of...',
           description: "",
+          section: "News",},{id: "news-i-just-started-a-new-adventure-as-a-postdoctoral-researcher-at-the-department-of-circulation-and-medical-imaging-ntnu-norway",
+          title: 'I just started a new adventure as a postdoctoral researcher at the Department...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
