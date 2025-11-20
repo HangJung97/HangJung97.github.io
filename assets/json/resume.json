@@ -6,13 +6,13 @@
     "email": "hangjung.ling@gmail.com",
     "phone": "",
     "url": "https://hangjung97.github.io/",
-    "summary": "A Malaysian in France interested in medical artificial intelligence and cardiac imaging.",
+    "summary": "A Malaysian in Norway interested in medical artificial intelligence and cardiac imaging.",
     "location": {
-      "address": "21 Avenue Jean Capelle",
-      "postalCode": "69100",
-      "city": "Villeurbanne",
-      "countryCode": "FR",
-      "region": "Rhône-Alpes"
+      "address": "Prinsesse Kristinas gt. 3",
+      "postalCode": "7030",
+      "city": "Trondheim",
+      "countryCode": "NO",
+      "region": "Trøndelag"
     },
     "profiles": [
       {
@@ -24,12 +24,22 @@
   },
   "work": [
     {
+      "name": "Department of Circulation and Medical Imaging, NTNU",
+      "location": "Trondheim, NO",
+      "position": "Postdoctoral researcher",
+      "url": "https://www.ntnu.edu/isb/ultrasound#/view/about",
+      "startDate": "2025-11-17",
+      "note": "Supervisor: Prof. <a href='https://scholar.google.com/citations?user=HwtxBSsAAAAJ&hl=en'>Lasse Løvstakken</a>",
+      "highlights": []
+    },
+    {
       "name": "CREATIS",
       "location": "Villeurbanne, FR",
       "position": "Postdoctoral researcher",
       "url": "https://www.creatis.insa-lyon.fr/site/en/equipe-de-recherche/ultim",
       "startDate": "2024-11-08",
       "endDate": "2025-10-11",
+      "summary": "Development of a web-based clinical GUI for automatic intracardiac blood-flow quantification in the left ventricle, integrating deep-learning–based segmentation, dealiasing, and vector flow mapping models.",
       "note": "Supervisors: Dr. <a href='https://biomecardio.com/en/'>Damien Garcia</a>, Prof. <a href='https://olivier-bernard-creatis.github.io/'>Olivier Bernard</a>, and MD–PhD <a href='https://scholar.google.com/citations?user=wn-XnTAAAAAJ'>Pierre-Yves Courand</a>",
       "highlights": []
     },

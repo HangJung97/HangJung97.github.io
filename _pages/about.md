@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <b>Postdoctoral researcher</b> @ Inserm, CREATIS, France.
+subtitle: <b>Postdoctoral researcher</b> @ ISB, NTNU, Norway.
 
 profile:
   align: right
@@ -24,7 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a postdoctoral researcher in the [ULTIM](https://www.creatis.insa-lyon.fr/site/en/equipe-de-recherche/ultim) team at [CREATIS](https://www.creatis.insa-lyon.fr/site/en), France, funded by [Inserm](https://www.inserm.fr/en/home/).
+I am currently a postdoctoral researcher in the [Ultrasound](https://www.ntnu.edu/isb/ultrasound#/view/about) research group, part of the [Department of Circulation and Medical Imaging](https://www.ntnu.edu/isb) (ISB) of the [Faculty of Medicine and Health Sciences](https://www.ntnu.edu/mh/faculty-of-medicine-and-health-sciences) at [Norwegian University of Science and Technology](https://www.ntnu.edu/).
+
+Before moving to Norway, I worked as a postdoctoral researcher in the [ULTIM](https://www.creatis.insa-lyon.fr/site/en/equipe-de-recherche/ultim) team at [CREATIS](https://www.creatis.insa-lyon.fr/site/en), France, funded by [Inserm](https://www.inserm.fr/en/home/). During this one-year postdoc, I developed a web-based clinical GUI for automatic intracardiac blood-flow quantification in the left ventricle, integrating deep-learning–based segmentation, dealiasing, and vector flow mapping models.
 
 In November 2024, I obtained my Ph.D. from [INSA Lyon](https://www.insa-lyon.fr/en)/[CREATIS](https://www.creatis.insa-lyon.fr/site/en), France. Supervised by [Damien Garcia](https://biomecardio.com/), [Olivier Bernard](https://olivier-bernard-creatis.github.io), and [Pierre-Yves Courand](https://scholar.google.com/citations?user=wn-XnTAAAAAJ), my thesis focused on estimating intracardiac vector blood flow from color Dpopler echocardiography using physics-informed and physics-guided neural networks.
 
