@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2025-12-05'
+  last_updated: '2025-12-31'
 papers:
   3s6x3lAAAAAJ:3fE2CSJIrl8C:
     citations: 17
@@ -26,6 +26,6 @@ papers:
     title: Intraventricular Vector Flow Mapping by Color Doppler using Physics-based Neural Networks
     year: '2024'
   3s6x3lAAAAAJ:eQOLeE2rZwMC:
-    citations: 13
+    citations: 14
     title: 'Extraction of volumetric indices from echocardiography: Which deep learning solution for clinical use?'
     year: '2023'
