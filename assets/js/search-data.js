@@ -45,7 +45,17 @@ ninja.data = [{
           section: "News",},{id: "news-i-just-started-a-new-adventure-as-a-postdoctoral-researcher-at-the-department-of-circulation-and-medical-imaging-ntnu-norway",
           title: 'I just started a new adventure as a postdoctoral researcher at the Department...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
