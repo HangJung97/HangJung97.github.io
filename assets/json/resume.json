@@ -1,4 +1,7 @@
 {
+  "titles": {
+    "interests": "Research Interests"
+  },
   "basics": {
     "name": "Hang Jung Ling",
     "label": "Postdoctoral researcher",
@@ -88,7 +91,7 @@
       "score": ""
     }
   ],
-  "research interests": [
+  "interests": [
     {
       "name": "Cardiac imaging",
       "icon": "fa-solid fa-heart-pulse",
@@ -153,7 +156,7 @@
       "summary": ""
     }
   ],
-  "service and volunteer": [
+  "volunteer": [
     {
       "organization": "Functional Imaging and Modeling of the Heart (FIMH)",
       "location": "Lyon, FR",

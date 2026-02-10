@@ -154,6 +154,9 @@ layout: default
               {% if section_title == 'Education' %}
                 {% assign entries = section_entries %}
                 {% include cv/education.liquid %}
+              {% elsif section_title == 'Interests' or section_title == 'Academic Interests' or section_title == 'Research Interests' %}
+                {% assign entries = section_entries %}
+                {% include cv/interests.liquid %}
               {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
                 {% assign entries = section_entries %}
                 {% include cv/awards.liquid %}
@@ -166,9 +169,6 @@ layout: default
               {% elsif section_title == 'Languages' %}
                 {% assign entries = section_entries %}
                 {% include cv/languages.liquid %}
-              {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
-                {% assign entries = section_entries %}
-                {% include cv/interests.liquid %}
               {% elsif section_title == 'Certificates' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
@@ -205,31 +205,31 @@ layout: default
             <h3 class="card-title font-weight-medium">Contact Information</h3>
             {% assign basics = site.data.resume.basics %}
             <table class="table table-cv table-sm table-borderless">
-              {% if basics.name %}
+              {% if basics.name and basics.name != '' %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
                   <td class="p-1 pl-2 font-weight-light">{{ basics.name }}</td>
                 </tr>
               {% endif %}
-              {% if basics.label %}
+              {% if basics.label and basics.label != '' %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
                   <td class="p-1 pl-2 font-weight-light">{{ basics.label }}</td>
                 </tr>
               {% endif %}
-              {% if basics.email %}
+              {% if basics.email and basics.email != '' %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
                   <td class="p-1 pl-2 font-weight-light">{{ basics.email }}</td>
                 </tr>
               {% endif %}
-              {% if basics.phone %}
+              {% if basics.phone and basics.phone != '' %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
                   <td class="p-1 pl-2 font-weight-light">{{ basics.phone }}</td>
                 </tr>
               {% endif %}
-              {% if basics.location %}
+              {% if basics.location and basics.location != '' %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
                   <td class="p-1 pl-2 font-weight-light">
@@ -240,7 +240,7 @@ layout: default
                   </td>
                 </tr>
               {% endif %}
-              {% if basics.url %}
+              {% if basics.url and basics.url != '' %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
                   <td class="p-1 pl-2 font-weight-light">
@@ -284,6 +284,23 @@ layout: default
             <div>
               {% assign entries = site.data.resume.education %}
               {% include cv/education.liquid %}
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- Interests -->
+        {% if site.data.resume.interests.size > 0 %}
+          {% comment %}
+            Look for a custom title in site.data.resume.titles.interests.
+            If not found, default to "Interests".
+          {% endcomment %}
+          {% assign title = site.data.resume.titles.interests | default: 'Interests' %}
+          <a class="anchor" id="interests"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ title }}</h3>
+            <div>
+              {% assign entries = site.data.resume.interests %}
+              {% include cv/interests.liquid %}
             </div>
           </div>
         {% endif %}
@@ -332,18 +349,6 @@ layout: default
             <div>
               {% assign entries = site.data.resume.languages %}
               {% include cv/languages.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Interests -->
-        {% if site.data.resume.interests.size > 0 %}
-          <a class="anchor" id="interests"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Interests</h3>
-            <div>
-              {% assign entries = site.data.resume.interests %}
-              {% include cv/interests.liquid %}
             </div>
           </div>
         {% endif %}

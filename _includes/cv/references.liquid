@@ -4,12 +4,62 @@
 
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
-    <li class="list-group-item">
+    <li class="list-group-item d-flex align-items-start py-3">
+      <!-- Main Icon -->
       {% if entry.icon %}
-        <i class="{{ entry.icon }}"></i>
+        <div class="mr-1" style="min-width: 20px; text-align: center;">
+          <i class="{{ entry.icon }}"></i>
+        </div>
       {% endif %}
-      <strong>{{ entry.name }}</strong>
-      <p>{{ entry.reference | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+      <!-- Content -->
+      <div class="w-100">
+        <!-- Name -->
+        <strong>
+          {% if entry.url %}
+            <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+          {% else %}
+            {{ entry.name }}
+          {% endif %}
+        </strong>
+
+        <!-- Details Block -->
+        {% if entry.reference or entry.email or entry.phone %}
+          <div class="mt-2 text-muted small">
+            <!-- Reference -->
+            {% if entry.reference %}
+              <div class="d-flex align-items-start mb-1">
+                <span class="mr-2" style="min-width: 15px;"><i class="fa fa-map-marker"></i></span>
+                <span>
+                  {% if entry.reference.first %}
+                    {% for ref in entry.reference %}
+                      <div class="d-block">{{ ref }}</div>
+                    {% endfor %}
+                  {% else %}
+                    {{ entry.reference | markdownify | remove: '<p>' | remove: '</p>' }}
+                  {% endif %}
+                </span>
+              </div>
+            {% endif %}
+
+            <!-- Email -->
+            {% if entry.email %}
+              <div class="d-flex align-items-center mb-1">
+                <span class="mr-2" style="min-width: 15px;"><i class="fa fa-envelope"></i></span>
+                <a href="mailto:{{ entry.email }}">{{ entry.email }}</a>
+              </div>
+            {% endif %}
+
+            <!-- Phone -->
+            {% if entry.phone %}
+              <div class="d-flex align-items-center mb-0">
+                <span class="mr-2" style="min-width: 15px;"><i class="fa fa-phone"></i></span>
+                <a href="tel:{{ entry.phone }}">{{ entry.phone }}</a>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
     </li>
   {% endfor %}
 </ul>
