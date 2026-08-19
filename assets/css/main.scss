@@ -27,5 +27,6 @@
 @use "teachings";
 @use "typograms";
 
-/* Load site-specific CV adjustments after the gem styles so they win the cascade. */
+/* Load site-specific adjustments after the gem styles so they win the cascade. */
 @use "custom-cv";
+@use "custom-socials";

@@ -1,0 +1,10 @@
+/*
+ * jekyll-socials renders scholar_userid with the older Academicons class.
+ * Keep scholar_userid as a scalar because citation and metadata integrations
+ * also consume it, then replace only the displayed glyph with Font Awesome.
+ */
+.social .ai-google-scholar::before {
+  font-family: var(--fa-family-brands);
+  font-weight: 400;
+  content: "\e63b";
+}
