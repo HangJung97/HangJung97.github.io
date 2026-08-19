@@ -1,6 +1,7 @@
 {
   "titles": {
-    "interests": "Research Interests"
+    "interests": "Research Interests",
+    "volunteer": "Service and Volunteering"
   },
   "basics": {
     "name": "Hang Jung Ling",
@@ -8,7 +9,7 @@
     "image": "",
     "email": "hangjung.ling@gmail.com",
     "phone": "",
-    "url": "https://hangjung97.github.io/",
+    "url": "https://hangjung97.github.io",
     "summary": "A Malaysian in Norway interested in medical artificial intelligence and cardiac imaging.",
     "location": {
       "address": "Prinsesse Kristinas gt. 3",
@@ -21,7 +22,7 @@
       {
         "network": "LinkedIn",
         "username": "Hang Jung Ling",
-        "url": "https://www.linkedin.com/in/hang-jung-ling/"
+        "url": "https://www.linkedin.com/in/hang-jung-ling"
       }
     ]
   },
@@ -62,7 +63,7 @@
     {
       "institution": "INSA Lyon",
       "location": "Villeurbanne, FR",
-      "url": "https://ge.insa-lyon.fr/",
+      "url": "https://ge.insa-lyon.fr",
       "area": "ASINSA Preparatory Cycle + Electrical Engineering",
       "studyType": "M. Sc. (Diplôme d'ingénieur)",
       "startDate": "2016-09-01",
@@ -80,9 +81,9 @@
       "score": ""
     },
     {
-      "institution": "INSA Lyon",
+      "institution": "INSA Lyon - MEGA Doctoral School (ED 162)",
       "location": "Villeurbanne, FR",
-      "url": "",
+      "url": "https://www.insa-lyon.fr/en/phd-studies",
       "area": "Physics-guided neural networks for intraventricular vector flow mapping by color Doppler",
       "studyType": "Ph.D.",
       "startDate": "2021-10-01",
@@ -158,10 +159,21 @@
   ],
   "volunteer": [
     {
+      "organization": "",
+      "position": "Reviewer",
+      "summary": "",
+      "highlights": [
+        "[Computer Methods and Programs in Biomedicine](https://www.sciencedirect.com/journal/computer-methods-and-programs-in-biomedicine)",
+        "[IEEE Transactions on Medical Imaging](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)",
+        "[IEEE Transactions on Ultrasonics (previously IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=11073821)",
+        "[npj Digital Medicine](https://www.nature.com/npjdigitalmed)"
+      ]
+    },
+    {
       "organization": "Functional Imaging and Modeling of the Heart (FIMH)",
       "location": "Lyon, FR",
       "position": "Student volunteer for conference organization",
-      "url": "https://fimh2023.sciencesconf.org/",
+      "url": "https://fimh2023.sciencesconf.org",
       "startDate": "2023-06-19",
       "endDate": "2023-06-23",
       "summary": "",
@@ -171,7 +183,7 @@
       "organization": "Deep Learning for Medical Imaging School (DLMI)",
       "location": "Lyon, FR",
       "position": "Student volunteer for summer school organization",
-      "url": "https://deepimaging2023.sciencesconf.org/",
+      "url": "https://deepimaging2023.sciencesconf.org",
       "startDate": "2023-04-17",
       "endDate": "2023-04-21",
       "summary": "Management of the administrative tasks and organization of the hands-on sessions.",
@@ -181,22 +193,6 @@
         "Tutorial preparation and validation.",
         "Moderation of hands-on sessions."
       ]
-    },
-    {
-      "organization": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
-      "position": "Reviewer",
-      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=58",
-      "startDate": "2023",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "organization": "Computer Methods and Programs in Biomedicine",
-      "position": "Reviewer",
-      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=58",
-      "startDate": "2024",
-      "summary": "",
-      "highlights": []
     }
   ],
   "skills": [
@@ -245,16 +241,16 @@
     {
       "name": "Olivier Bernard",
       "icon": "fa-solid fa-book",
+      "url": "https://olivier-bernard-creatis.github.io",
       "reference": ["Deputy director, CREATIS, Lyon, France", "Professor, Department of Electrical Engineering, INSA Lyon, France"],
-      "email": "olivier.bernard@insa-lyon.fr",
-      "url": "https://olivier-bernard-creatis.github.io/"
+      "email": "olivier.bernard@insa-lyon.fr"
     },
     {
       "name": "Damien Garcia",
       "icon": "fa-solid fa-laptop",
+      "url": "https://biomecardio.com/en",
       "reference": ["INSERM researcher, CREATIS, Lyon, France"],
-      "email": "damien.garcia@creatis.insa-lyon.fr",
-      "url": "https://biomecardio.com/en/"
+      "email": "damien.garcia@creatis.insa-lyon.fr"
     }
   ]
 }

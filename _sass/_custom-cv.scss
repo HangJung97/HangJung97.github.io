@@ -1,0 +1,163 @@
+/*
+ * The Tailwind-first v1 runtime leaves browser list markers enabled when
+ * preflight is disabled. CV templates use .list-group for structural lists,
+ * so remove only their default bullets and indentation without enabling the
+ * broader Bootstrap compatibility layer.
+ */
+.cv .list-group {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.cv .list-group-item::marker {
+  content: "";
+}
+
+/*
+ * The generic typography rules add a top border to cells in tables without the
+ * Bootstrap .table class. Date/location tables intentionally omit that class,
+ * which otherwise produces short separators above each row in the date column.
+ */
+.cv .list-group-item .table-cv td,
+.cv .list-group-item .table-cv th {
+  border-top: 0;
+}
+
+/*
+ * Restore the pre-v1 separator as one line spanning the complete CV entry.
+ * Keeping it on the list item also lets entries of different heights place the
+ * separator correctly without depending on the date/location table height.
+ */
+.cv .list-group-flush > .list-group-item {
+  border-bottom: 1px solid var(--global-divider-color, #424246);
+}
+
+/* Add a small, uniform gap after separators without moving the first entry away from its section title. */
+.cv .list-group-flush > .list-group-item + .list-group-item {
+  padding-top: 0.25rem;
+}
+
+/* Do not draw an unnecessary separator beneath the final item in a section. */
+.cv .list-group-flush > .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+/*
+ * Bootstrap's .row uses negative side margins to cancel a padded parent. These
+ * CV list items have no horizontal padding, so retain the row inside the card.
+ */
+.cv .list-group-item > .row {
+  margin-inline: 0;
+}
+
+/*
+ * Experience and Education render each date/location pair in an auto-width
+ * table. Center that table as one unit inside the actual two-column grid cell.
+ * Replace the core's legacy negative translation with a 1px downward adjustment
+ * so the top of the date badge aligns exactly with the position title.
+ */
+.cv .date-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateY(1px);
+}
+
+/*
+ * Preserve the table's natural width; this also centers a short date badge
+ * beneath a longer location while keeping both centered in the date column.
+ */
+.cv .date-column > .table-cv {
+  flex: 0 0 auto;
+  width: max-content;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.cv .date-column > .table-cv td {
+  text-align: center;
+}
+
+/*
+ * The site-specific references include restores the older icon-and-details
+ * layout. Scope its presentation to the card immediately after #references so
+ * no other CV section inherits these spacing and alignment rules.
+ */
+#references + .card .list-group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Arrange each reference as a fixed icon column plus flexible content. */
+#references + .card .cv-reference {
+  display: flex;
+  align-items: flex-start;
+  /* A 0.375rem top inset gives the same 7–8px visible gap after separators as the other CV entry renderers. */
+  padding: 0.375rem 1.75rem 1.25rem;
+  list-style: none;
+  border-bottom: 1px solid var(--global-divider-color, #424246);
+}
+
+/* References have their own base padding, so apply the same additional 4px gap explicitly. */
+#references + .card .cv-reference + .cv-reference {
+  padding-top: 0.625rem;
+}
+
+/* The final person does not need a trailing separator. */
+#references + .card .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+/* Explicitly suppress list markers in browsers that retain ::marker. */
+#references + .card .list-group-item::marker {
+  content: "";
+}
+
+/* Give the main icon a fixed column so every reference name starts together. */
+#references + .card .cv-reference-main-icon {
+  flex: 0 0 1.25rem;
+  margin-right: 0.25rem;
+  text-align: center;
+}
+
+/* Allow long details to wrap without widening or overflowing the card. */
+#references + .card .cv-reference-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Emphasize each reference name above its role and contact details. */
+#references + .card .cv-reference-name {
+  font-weight: 700;
+}
+
+/* Separate the structured details from the linked reference name. */
+#references + .card .cv-reference-details {
+  margin-top: 0.75rem;
+}
+
+/* Align each detail icon with a flexible text column that may wrap. */
+#references + .card .cv-reference-row {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  column-gap: 0.5rem;
+  align-items: start;
+  margin-bottom: 0.35rem;
+}
+
+/* Avoid extra space after the last detail row for each person. */
+#references + .card .cv-reference-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Align each detail icon with the first line of its adjacent text. */
+#references + .card .cv-reference-row > i {
+  padding-top: 0.15rem;
+  text-align: center;
+}
+
+/* Render each role/location string on its own line when JSON supplies an array. */
+#references + .card .cv-reference-lines > span {
+  display: block;
+}

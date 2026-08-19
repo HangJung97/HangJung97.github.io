@@ -67,6 +67,8 @@ jobs:
         run: npm ci
 
       - name: Run style contract lint 🧷
+        # The thin-starter contract rejects intentional local overrides used by this personal site.
+        if: github.repository == 'alshedivat/al-folio'
         run: npm run lint:style-contract
 
       - name: Install build prerequisites 🔧
@@ -75,12 +77,16 @@ jobs:
           pip3 install --upgrade nbconvert
 
       - name: Run comments integration test 🧪
+        # This test relies on active comment example pages provided by the upstream starter.
+        if: github.repository == 'alshedivat/al-folio'
         run: bash test/integration_comments.sh
 
       - name: Run plugin toggle integration test 🔌
         run: bash test/integration_plugin_toggles.sh
 
       - name: Run distill integration test 📄
+        # This test validates active upstream Distill sample content and fixtures.
+        if: github.repository == 'alshedivat/al-folio'
         run: bash test/integration_distill.sh
 
       - name: Run bootstrap compatibility integration test 🧩
@@ -93,4 +99,6 @@ jobs:
         run: bash test/integration_css_minify.sh
 
       - name: Run new plugin integration checks 🧩
+        # This test requires RTL and Marimo demo posts that this personal site excludes from its build.
+        if: github.repository == 'alshedivat/al-folio'
         run: bash test/integration_new_plugins.sh

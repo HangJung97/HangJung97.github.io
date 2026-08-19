@@ -1,59 +1,54 @@
 {% comment %}
-  Unified references entry renderer for both formats
+  Site-specific reference renderer.
+  Keep reference data structured in resume.json; this include owns the markup,
+  while _sass/_custom-cv.scss owns presentation.
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
-    <li class="list-group-item d-flex align-items-start py-3">
-      <!-- Main Icon -->
+    <li class="list-group-item cv-reference">
       {% if entry.icon %}
-        <div class="mr-1" style="min-width: 20px; text-align: center;">
-          <i class="{{ entry.icon }}"></i>
+        <div class="cv-reference-main-icon">
+          <i class="{{ entry.icon }}" aria-hidden="true"></i>
         </div>
       {% endif %}
 
-      <!-- Content -->
-      <div class="w-100">
-        <!-- Name -->
-        <strong>
+      <div class="cv-reference-content">
+        <strong class="cv-reference-name">
           {% if entry.url %}
-            <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+            <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.name }}</a>
           {% else %}
             {{ entry.name }}
           {% endif %}
         </strong>
 
-        <!-- Details Block -->
         {% if entry.reference or entry.email or entry.phone %}
-          <div class="mt-2 text-muted small">
-            <!-- Reference -->
+          <div class="cv-reference-details">
             {% if entry.reference %}
-              <div class="d-flex align-items-start mb-1">
-                <span class="mr-2" style="min-width: 15px;"><i class="fa fa-map-marker"></i></span>
-                <span>
+              <div class="cv-reference-row">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div class="cv-reference-lines">
                   {% if entry.reference.first %}
-                    {% for ref in entry.reference %}
-                      <div class="d-block">{{ ref }}</div>
+                    {% for reference_line in entry.reference %}
+                      <span>{{ reference_line | markdownify | remove: '<p>' | remove: '</p>' }}</span>
                     {% endfor %}
                   {% else %}
-                    {{ entry.reference | markdownify | remove: '<p>' | remove: '</p>' }}
+                    <span>{{ entry.reference | markdownify | remove: '<p>' | remove: '</p>' }}</span>
                   {% endif %}
-                </span>
+                </div>
               </div>
             {% endif %}
 
-            <!-- Email -->
             {% if entry.email %}
-              <div class="d-flex align-items-center mb-1">
-                <span class="mr-2" style="min-width: 15px;"><i class="fa fa-envelope"></i></span>
+              <div class="cv-reference-row">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                 <a href="mailto:{{ entry.email }}">{{ entry.email }}</a>
               </div>
             {% endif %}
 
-            <!-- Phone -->
             {% if entry.phone %}
-              <div class="d-flex align-items-center mb-0">
-                <span class="mr-2" style="min-width: 15px;"><i class="fa fa-phone"></i></span>
+              <div class="cv-reference-row">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
                 <a href="tel:{{ entry.phone }}">{{ entry.phone }}</a>
               </div>
             {% endif %}
