@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-18'
+  last_updated: '2026-09-02'
 papers:
   3s6x3lAAAAAJ:3fE2CSJIrl8C:
     citations: 29
@@ -14,7 +14,7 @@ papers:
     title: 'Deep Vortography: Intracardiac Vortex Analysis Using Color Doppler'
     year: '2026'
   3s6x3lAAAAAJ:Tyk-4Ss8FVUC:
-    citations: 7
+    citations: 8
     title: Boosting cardiac color Doppler frame rates with deep learning
     year: '2024'
   3s6x3lAAAAAJ:W7OEmFMy1HYC:
