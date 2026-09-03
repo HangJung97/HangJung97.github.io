@@ -4,5 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - HangJung97/PhiJAX
+  - HangJung97/phijax-hydra-template
   - creatis-myriad/ASCENT
   - creatis-myriad/creatis-myriad.github.io
