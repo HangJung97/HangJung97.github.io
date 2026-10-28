@@ -1,24 +1,28 @@
 metadata:
-  last_updated: '2026-09-02'
+  last_updated: '2026-10-28'
 papers:
   3s6x3lAAAAAJ:3fE2CSJIrl8C:
-    citations: 29
+    citations: 33
     title: Physics-guided neural networks for intraventricular vector flow mapping
     year: '2024'
   3s6x3lAAAAAJ:5nxA0vEk-isC:
-    citations: 14
+    citations: 15
     title: Reaching intra-observer variability in 2-D echocardiographic image segmentation with a simple U-Net architecture
     year: '2022'
   3s6x3lAAAAAJ:9ZlFYXVOiuMC:
     citations: 0
     title: 'Deep Vortography: Intracardiac Vortex Analysis Using Color Doppler'
     year: '2026'
+  3s6x3lAAAAAJ:QIV2ME_5wuYC:
+    citations: 0
+    title: 'The MYOSAIQ Challenge: Myocardial Segmentation with Automated Infarct Quantification'
+    year: '2026'
   3s6x3lAAAAAJ:Tyk-4Ss8FVUC:
     citations: 8
     title: Boosting cardiac color Doppler frame rates with deep learning
     year: '2024'
   3s6x3lAAAAAJ:W7OEmFMy1HYC:
-    citations: 16
+    citations: 17
     title: Phase Unwrapping of Color Doppler Echocardiography using Deep Learning
     year: '2023'
   3s6x3lAAAAAJ:Wp0gIr-vW9MC:
@@ -30,6 +34,6 @@ papers:
     title: Intraventricular Vector Flow Mapping by Color Doppler using Physics-based Neural Networks
     year: '2024'
   3s6x3lAAAAAJ:eQOLeE2rZwMC:
-    citations: 15
+    citations: 16
     title: 'Extraction of volumetric indices from echocardiography: Which deep learning solution for clinical use?'
     year: '2023'
